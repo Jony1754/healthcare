@@ -2,6 +2,34 @@
   font-family: $fontfamily;
 }
 
-h4 {
-  font-size: $componentWeight;
+.doctor-info-status {
+  color: $active-red;
+  margin-left: 10px;
+}
+
+.menu-option-text,
+.doctor-info-name {
+  margin-left: 10px;
+  font-size: $nameWeight;
+  color: $maincolor;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.appointment-type,
+.appointment-date_day_text,
+.appointment-date_hour_text {
+  color: $maincolor;
+  font-size: $appointment;
+}
+.appointment-doctor-name,
+.doctor-info-grade {
+  color: $secondary-color;
+  font-size: $nameWeight;
+  margin-left: 10px;
+}
+
+.appointment-date_day_text,
+.appointment-date_hour_text {
+  font-size: $dateWeight;
 }
