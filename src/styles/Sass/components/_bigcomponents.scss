@@ -1,0 +1,30 @@
+// BUTTONS
+
+//BAGDES
+.user {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: $radius;
+  box-shadow: $shadow;
+  width: 393px;
+  height: 131px;
+  padding-left: 30px;
+  padding-right: 77px;
+  padding-top: 10px;
+  padding-bottom: auto;
+
+  &-img {
+    width: 30%;
+    img {
+      border-radius: 100%;
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+  &-info {
+    width: 50%;
+    .user-info_mail {
+      color: $secondary-color;
+    }
+  }
+}

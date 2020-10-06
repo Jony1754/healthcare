@@ -1,0 +1,35 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 40px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.16);
+  width: 393px;
+  height: 131px;
+  padding-left: 30px;
+  padding-right: 77px;
+  padding-top: 10px;
+  padding-bottom: auto;
+}
+.user-img {
+  width: 30%;
+}
+.user-img img {
+  border-radius: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+.user-info {
+  width: 50%;
+}
+.user-info .user-info_mail {
+  color: #6b7881;
+}
+/*# sourceMappingURL=style.css.map */
