@@ -1,4 +1,26 @@
 @import "./root/variables";
 @import "./root/typography";
 @import "./components/spacing";
-@import "./components/bigcomponents";
+@import "./components/components";
+
+.app {
+  display: flex;
+}
+
+.app-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.app-main,
+.app-doctors {
+  max-height: 100vh;
+  overflow: scroll;
+  margin: 100px 50px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}

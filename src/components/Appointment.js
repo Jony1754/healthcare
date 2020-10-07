@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import '../styles/css/style.css';
 import dateImg from '../assets/icons/day.png';
 import hourImg from '../assets/icons/hour.png';
-
+import testDoctor from '../assets/images/doc2.jpg';
 class Appointment extends React.Component {
     render() {
         return (
@@ -23,9 +23,10 @@ class Appointment extends React.Component {
                         <h3 className="appointment-date_hour_text">{this.props.hour}{this.props.time}</h3>
                     </div>
                 </div>
+                {/* <hr /> */}
                 <div className="appointment-doctor">
                     <div className="appointment-doctor-picture">
-                        <img src={this.props.imageURL} alt="" />
+                        <img src={testDoctor} alt="" />
                     </div>
                     <h4 className="appointment-doctor-name">Dr. {this.props.name}</h4>
                 </div>

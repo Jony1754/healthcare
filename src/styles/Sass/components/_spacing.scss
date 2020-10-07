@@ -1,11 +1,6 @@
 %componentSpacing {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   border-radius: $radius;
- 
 
-  padding-left: 20px;
-  padding-right: 57px;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
