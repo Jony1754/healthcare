@@ -1,0 +1,27 @@
+input {
+  margin-top: 10px;
+  padding: 12px;
+  border-width: 0;
+  box-shadow: $shadow;
+  width: 100%;
+  font-size: $nameWeight;
+  font-weight: 600;
+  outline: hidden;
+}
+input[type="date"],
+input[type="time"] {
+  width: fit-content;
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border: 3px solid $active-blue;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  font-size: $nameWeight;
+  box-shadow: $shadow;
+  border-radius: 4px;
+}

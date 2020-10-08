@@ -4,7 +4,12 @@
 @import "./components/components";
 @import "./pages/genderform";
 @import "./pages/userform";
+@import "./utils/flex";
+@import "./utils/inputsettings";
 
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
 }

@@ -233,10 +233,7 @@
 
 .register {
   margin-top: 30%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+  border-radius: 40px;
 }
 .register-box {
   display: flex;
@@ -247,13 +244,6 @@
   margin-bottom: 10px;
   width: 60%;
 }
-.register-box input {
-  margin-top: 10px;
-  padding: 12px;
-  border-width: 0;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
-  width: 100%;
-}
 .register-btn {
   background-color: #6e78f7;
   color: white;
@@ -263,6 +253,103 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
   padding: 10px 20px;
   margin-top: 20px;
+}
+
+.boxcontainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  background-image: url("../hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.boxcontainer .container-form {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+.boxform {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px;
+}
+
+.boxnew {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 900;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  width: 90%;
+  border-radius: 40px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+input {
+  margin-top: 10px;
+  padding: 12px;
+  border-width: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  outline: hidden;
+}
+
+input[type=date],
+input[type=time] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+input[type=text]:focus,
+input[type=email]:focus {
+  border: 3px solid #6e78f7;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  font-size: 18px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {

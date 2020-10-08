@@ -18,10 +18,9 @@
 }
 .register {
   margin-top: 30%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
+  @extend %flexsetting;
+  border-radius: $radius;
+
   &-box {
     display: flex;
     flex-direction: column;
@@ -30,14 +29,6 @@
     align-items: flex-start;
     margin-bottom: 10px;
     width: 60%;
-
-    input {
-      margin-top: 10px;
-      padding: 12px;
-      border-width: 0;
-      box-shadow: $shadow;
-      width: 100%;
-    }
   }
 
   &-btn {
@@ -51,4 +42,52 @@
 
     margin-top: 20px;
   }
+}
+
+.boxcontainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  background-image: url("../hero.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .container-form {
+    // background-color: white;
+    width: fit-content;
+  }
+}
+.blur {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); // Make sure this color has an opacity of less than 1
+  backdrop-filter: blur(8px); // This be the blur
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+}
+
+.boxform {
+  box-shadow: $shadow;
+  border-radius: $radius;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 50px;
+}
+.boxnew {
+  display: flex;
+  flex-direction: column;
+  font-size: $nameWeight;
+  font-weight: 900;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  width: 90%;
+  border-radius: $radius;
 }
