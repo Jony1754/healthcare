@@ -207,6 +207,68 @@
   margin-bottom: 10px;
 }
 
+.register-box_gender {
+  text-align: center;
+}
+.register-box_gender h3 {
+  margin-bottom: 2px;
+}
+
+.login {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.login .form {
+  width: 50vw;
+}
+.login .hero {
+  width: 50vw;
+  overflow: hidden;
+}
+.login .hero img {
+  width: 100%;
+  image-rendering: optimizeQuality;
+}
+
+.register {
+  margin-top: 30%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.register-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 900;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  width: 60%;
+}
+.register-box input {
+  margin-top: 10px;
+  padding: 12px;
+  border-width: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+  width: 100%;
+}
+.register-btn {
+  background-color: #6e78f7;
+  color: white;
+  font-size: 16px;
+  font-weight: 900;
+  border-width: 0;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.16);
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+body {
+  margin: 0;
+}
+
 .app {
   display: flex;
 }
@@ -222,11 +284,5 @@
   max-height: 100vh;
   overflow: scroll;
   margin: 100px 50px;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
-  /* make scrollbar transparent */
 }
 /*# sourceMappingURL=style.css.map */

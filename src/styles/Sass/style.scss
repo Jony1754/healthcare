@@ -2,7 +2,12 @@
 @import "./root/typography";
 @import "./components/spacing";
 @import "./components/components";
+@import "./pages/genderform";
+@import "./pages/userform";
 
+body {
+  margin: 0;
+}
 .app {
   display: flex;
 }
@@ -20,7 +25,7 @@
   margin: 100px 50px;
 }
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
-}
+// ::-webkit-scrollbar {
+//   width: 0px;
+//   background: transparent; /* make scrollbar transparent */
+// }
