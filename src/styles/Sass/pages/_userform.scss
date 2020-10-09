@@ -1,5 +1,6 @@
 .login {
   display: flex;
+
   height: 100vh;
   width: 100vw;
   .form {
@@ -17,8 +18,12 @@
   }
 }
 .register {
-  margin-top: 30%;
-  @extend %flexsetting;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
   border-radius: $radius;
 
   &-box {
@@ -32,14 +37,7 @@
   }
 
   &-btn {
-    background-color: $active-blue;
-    color: white;
-    font-size: $componentWeight + 2px;
-    font-weight: 900;
-    border-width: 0;
-    box-shadow: $shadow;
-    padding: 10px 20px;
-
+    @extend %submit-btn;
     margin-top: 20px;
   }
 }
@@ -60,6 +58,14 @@
     // background-color: white;
     width: fit-content;
   }
+
+  .container-list {
+    max-height: 100%;
+    overflow: scroll;
+    margin-left: 100px;
+    align-self: center;
+    justify-self: center;
+  }
 }
 .blur {
   background: rgba(
@@ -79,7 +85,10 @@
   box-shadow: $shadow;
   border-radius: $radius;
   background-color: rgba(255, 255, 255, 0.5);
-  padding: 50px;
+  padding: 50px 80px;
+  input[type="submit"] {
+    @extend %submit-btn;
+  }
 }
 .boxnew {
   display: flex;

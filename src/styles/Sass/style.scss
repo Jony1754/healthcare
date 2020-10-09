@@ -2,10 +2,10 @@
 @import "./root/typography";
 @import "./components/spacing";
 @import "./components/components";
-@import "./pages/genderform";
 @import "./pages/userform";
 @import "./utils/flex";
 @import "./utils/inputsettings";
+@import "./components/buttons";
 
 * {
   box-sizing: border-box;
@@ -30,7 +30,7 @@ body {
   margin: 100px 50px;
 }
 
-// ::-webkit-scrollbar {
-//   width: 0px;
-//   background: transparent; /* make scrollbar transparent */
-// }
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
